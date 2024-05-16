@@ -9,6 +9,7 @@ Program::Program(){
 void Program::runProgram(){
     readFileNameAndStations();
     loadGraphFromFile();
+    graph_.printGraph();
 }
 
 void Program::readFileNameAndStations(){
@@ -43,7 +44,7 @@ void Program::loadGraphFromFile() {
 
         while (iss >> std::quoted(station) >> cost) {
             if (!lastStation.empty()) {
-                //graph_.addEdge(lastStation, station, cost);
+                graph_.addEdge(lastStation, station, cost);
             }
             lastStation = station;
         }

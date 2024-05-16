@@ -9,7 +9,6 @@ class Graph {
         void printGraph();
     private:
         std::unordered_map<std::string, std::vector<std::pair<std::string, int>>> adjList;
-
 };
 
 
