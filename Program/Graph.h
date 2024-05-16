@@ -1,12 +1,14 @@
-//
-// Created by Julia Pabst on 16.05.24.
-//
-
 #ifndef PROGRAM_GRAPH_H
 #define PROGRAM_GRAPH_H
+#include <iostream>
 
 
 class Graph {
+    public:
+        void addEdge(const std::string& start, const std::string& end, int weight);
+        void printGraph();
+    private:
+        std::unordered_map<std::string, std::vector<std::pair<std::string, int>>> adjList;
 
 };
 

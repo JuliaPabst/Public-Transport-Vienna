@@ -8,6 +8,7 @@ Program::Program(){
 
 void Program::runProgram(){
     readFileNameAndStations();
+    loadGraphFromFile();
 }
 
 void Program::readFileNameAndStations(){
@@ -34,7 +35,7 @@ void Program::loadGraphFromFile() {
     while (getline(file, line)) {
         std::istringstream iss(line);
         std::string lineHeader;
-        getline(iss, lineHeader, ':'); // Liest bis zum Doppelpunkt, ignoriert ihn
+        getline(iss, lineHeader, ':'); // read until colon and ignores it
 
         std::string station;
         std::string lastStation;
@@ -42,7 +43,7 @@ void Program::loadGraphFromFile() {
 
         while (iss >> std::quoted(station) >> cost) {
             if (!lastStation.empty()) {
-                graph_.addEdge(lastStation, station, cost);
+                //graph_.addEdge(lastStation, station, cost);
             }
             lastStation = station;
         }
