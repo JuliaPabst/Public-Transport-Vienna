@@ -4,6 +4,8 @@
 
 #ifndef PROGRAM_PROGRAM_H
 #define PROGRAM_PROGRAM_H
+#include <iostream>
+#include <string>
 
 
 class Program {
@@ -12,6 +14,7 @@ class Program {
 
     private:
         void readStations();
+        std::vector<std::string> stations_;
 };
 
 
