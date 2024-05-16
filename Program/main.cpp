@@ -1,6 +1,10 @@
 #include <iostream>
+#include "Program.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Program program;
+
+    program.runProgram();
+
     return 0;
 }
