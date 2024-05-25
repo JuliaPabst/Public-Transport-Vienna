@@ -1,5 +1,67 @@
-//
-// Created by Julia Pabst on 16.05.24.
-//
-
 #include "PathFinder.h"
+#include <iostream>
+#include <limits>
+
+PathFinder::PathFinder(Graph& graph, const std::string& start, const std::string& end)
+        : graph_(graph), start_(start), end_(end) {}
+
+void PathFinder::dijkstra() {
+    std::priority_queue<std::pair<int, std::string>, std::vector<std::pair<int, std::string>>, std::greater<>> pq;
+    std::unordered_map<std::string, int> distances;
+    std::unordered_map<std::string, std::string> previous;
+
+    for (const auto& node : graph_.getNodes()) {
+        distances[node] = std::numeric_limits<int>::max();
+        previous[node] = "";
+    }
+
+    distances[start_] = 0;
+    pq.push({0, start_});
+
+    while (!pq.empty()) {
+        auto [currentDistance, currentNode] = pq.top();
+        pq.pop();
+
+        if (currentDistance > distances[currentNode]) {
+            continue;
+        }
+
+        const auto& neighbors = graph_.getAdjList().at(currentNode);
+        for (const auto& [neighbor, weight] : neighbors) {
+            int distance = currentDistance + weight;
+
+            if (distance < distances[neighbor]) {
+                distances[neighbor] = distance;
+                previous[neighbor] = currentNode;
+                pq.push({distance, neighbor});
+            }
+        }
+    }
+
+    distances_ = distances;
+    previous_ = previous;
+}
+
+
+void PathFinder::findShortestPath() {
+    dijkstra();
+
+    for (std::string at = end_; at != ""; at = previous_[at]) {
+        path_.push_back(at);
+    }
+
+    std::reverse(path_.begin(), path_.end());
+}
+
+void PathFinder::printPath() {
+    if (path_.size() == 1 && path_[0] == start_) {
+        std::cout << "No path found from " << start_ << " to " << end_ << std::endl;
+        return;
+    }
+
+    std::cout << "Path from " << start_ << " to " << end_ << ": ";
+    for (const auto& station : path_) {
+        std::cout << station << " ";
+    }
+    std::cout << "\nTotal cost: " << distances_[end_] << std::endl;
+}
