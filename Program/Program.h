@@ -7,6 +7,8 @@
 #include <iostream>
 #include <string>
 #include "Graph.h"
+#include "PathFinder.h"
+
 
 
 class Program {
