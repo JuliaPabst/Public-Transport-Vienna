@@ -12,6 +12,15 @@ class Graph {
     const std::unordered_map<std::string, std::vector<std::pair<std::string, int>>>& getAdjList() const { return adjList; }
     std::vector<std::string> getNodes() const;
     private:
+        /*
+            # Choice of data type:
+                -   unordered_map: stores several key and value pairs:
+                    key = station name (string)
+                    value = edges to other nodes (vector of pairs)
+                -   pair:
+                    first element = station name of other station
+                    second element = cost between stations
+        */
         std::unordered_map<std::string, std::vector<std::pair<std::string, int>>> adjList;
 };
 
