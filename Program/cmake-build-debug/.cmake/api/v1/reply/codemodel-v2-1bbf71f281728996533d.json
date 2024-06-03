@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Program::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Program-Debug-efd8bf9e33e478257266.json",
+					"jsonFile" : "target-Program-Debug-44e3677d6a73b88421bc.json",
 					"name" : "Program",
 					"projectIndex" : 0
 				}
@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/julia/Desktop/Knowledge_Centre/FH_Technikum/Semester2/Algorithemen_und_Datenstrukturen/Public-Transport-Vienna/Program/cmake-build-debug",
-		"source" : "/Users/julia/Desktop/Knowledge_Centre/FH_Technikum/Semester2/Algorithemen_und_Datenstrukturen/Public-Transport-Vienna/Program"
+		"build" : "/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug",
+		"source" : "/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program"
 	},
 	"version" : 
 	{
