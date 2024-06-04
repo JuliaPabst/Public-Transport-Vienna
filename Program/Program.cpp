@@ -9,13 +9,11 @@ Program::Program(){
 void Program::runProgram() {
     readFileNameAndStations();
     loadGraphFromFile();
-
+    graph_.printGraph();
     PathFinder pathFinder(graph_, stations_[0], stations_[1]);
     pathFinder.findShortestPath();
     pathFinder.printPath();
 }
-
-
 
 void Program::readFileNameAndStations(){
     std::cout << "Enter the name of the file you want to analyse!" << std::endl;

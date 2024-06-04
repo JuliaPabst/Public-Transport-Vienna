@@ -7,10 +7,14 @@
 
 class Graph {
     public:
+        /*
+            - reference because a copy is not needed (performance)
+            - const because it should not be altered
+        */
         void addEdge(const std::string& start, const std::string& end, int weight);
         void printGraph();
-    const std::unordered_map<std::string, std::vector<std::pair<std::string, int>>>& getAdjList() const { return adjList; }
-    std::vector<std::string> getNodes() const;
+        const std::unordered_map<std::string, std::vector<std::pair<std::string, int>>>& getAdjList() const { return adjList; }
+        std::vector<std::string> getNodes() const;
     private:
         /*
             # Choice of data type:
