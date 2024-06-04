@@ -1,7 +1,3 @@
-//
-// Created by Julia Pabst on 16.05.24.
-//
-
 #ifndef PROGRAM_PROGRAM_H
 #define PROGRAM_PROGRAM_H
 #include <iostream>
@@ -9,13 +5,10 @@
 #include "Graph.h"
 #include "PathFinder.h"
 
-
-
 class Program {
     public:
         Program();
         void runProgram();
-
     private:
         void readFileNameAndStations();
         void loadGraphFromFile();

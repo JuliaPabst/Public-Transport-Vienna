@@ -3,13 +3,14 @@
 #include <sstream>
 
 Program::Program(){
+    // size 2 for start and destination station
     stations_.resize(2);
 }
 
 void Program::runProgram() {
     readFileNameAndStations();
     loadGraphFromFile();
-    graph_.printGraph();
+    // graph_.printGraph();
     PathFinder pathFinder(graph_, stations_[0], stations_[1]);
     pathFinder.findShortestPath();
     pathFinder.printPath();
@@ -39,12 +40,14 @@ void Program::loadGraphFromFile() {
     while (getline(file, line)) {
         std::istringstream iss(line);
         std::string lineHeader;
-        getline(iss, lineHeader, ':'); // read until colon and ignores it
+        // read until colon and ignores it
+        getline(iss, lineHeader, ':');
 
         std::string station;
         std::string lastStation;
         int cost;
 
+        // go from station to station
         while (iss >> std::quoted(station) >> cost) {
             if (!lastStation.empty()) {
                 graph_.addEdge(lastStation, station, cost);
