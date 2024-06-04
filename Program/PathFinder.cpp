@@ -54,14 +54,23 @@ void PathFinder::findShortestPath() {
 }
 
 void PathFinder::printPath() {
-    if (path_.size() == 1 && path_[0] == start_) {
-        std::cout << "No path found from " << start_ << " to " << end_ << std::endl;
+    if (path_.size() <= 1) {
+        std::cout << "No path found or no line changes necessary from " << start_ << " to " << end_ << std::endl;
         return;
     }
 
     std::cout << "Path from " << start_ << " to " << end_ << ": ";
-    for (const auto& station : path_) {
-        std::cout << station << " ";
+    std::string lastLine = "", currentLine;
+    for (size_t i = 0; i < path_.size() - 1; ++i) {
+        currentLine = graph_.getLine(path_[i], path_[i + 1]);
+        if (i > 0 && currentLine != lastLine) {
+            std::cout << "\nChange from line " << lastLine << " to " << currentLine << " at " << path_[i] << " -> "<< std::endl;
+        }
+        lastLine = currentLine;
+        std::cout << path_[i] << " (" << lastLine << ") -> ";
     }
-    std::cout << "\nTotal cost: " << distances_[end_] << std::endl;
+    std::cout << path_.back() << std::endl; // Print the last station
+    std::cout << "Total cost: " << distances_[end_] << std::endl;
 }
+
+

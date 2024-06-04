@@ -17,7 +17,7 @@ public:
 
     const std::unordered_map<std::string, std::vector<std::tuple<std::string, int, std::string>>>&
     getAdjList() const { return adjList; }
-
+    std::string getLine(const std::string& from, const std::string& to);
     std::vector<std::string> getNodes() const;
 
 private:
