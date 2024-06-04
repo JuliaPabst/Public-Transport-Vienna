@@ -16,13 +16,15 @@ std::vector<std::string> Graph::getNodes() const {
 }
 
 
-void Graph::addEdge(const std::string& start, const std::string& end, int weight) {
-    // add edge (pair of destination station and weight) to start station in unordered map
-    adjList[start].push_back(std::make_pair(end, weight));
-
-    // add edge (pair of start station and weight) to destination station in unordered map
-    adjList[end].push_back(std::make_pair(start, weight));
+void Graph::addEdge(const std::string& start, const std::string& end, int weight, const std::string& line) {
+    // add edge (pair of destination station, weight and line name) to start station in unordered map
+    adjList[start].push_back(std::make_tuple(end, weight, line));
+    // add edge (pair of start station, weight and line name) to destination station in unordered map
+    adjList[end].push_back(std::make_tuple(start, weight, line)); // Assuming undirected graph for simplicity
 }
+
+
+
 
 
 void Graph::printGraph() {
@@ -30,9 +32,9 @@ void Graph::printGraph() {
     for (auto& node : adjList) {
         // print the station name (key)
         std::cout << "Station: " << node.first << " -> ";
-        // loop through all edges and print station name and cost
-        for (auto& edge : node.second) {
-            std::cout << "(" << edge.first << ", " << edge.second << ") ";
+        // Loop through all edges and print station name, cost, and line name
+        for (const auto& edge : node.second) {
+            std::cout << "(" << std::get<0>(edge) << ", " << std::get<1>(edge) << ", " << std::get<2>(edge) << ") ";
         }
         std::cout << std::endl;
     }

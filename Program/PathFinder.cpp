@@ -27,7 +27,7 @@ void PathFinder::dijkstra() {
         }
 
         const auto& neighbors = graph_.getAdjList().at(currentNode);
-        for (const auto& [neighbor, weight] : neighbors) {
+        for (const auto& [neighbor, weight, lineName] : neighbors) {
             int distance = currentDistance + weight;
 
             if (distance < distances[neighbor]) {

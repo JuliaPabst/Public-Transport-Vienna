@@ -39,18 +39,19 @@ void Program::loadGraphFromFile() {
     std::string line;
     while (getline(file, line)) {
         std::istringstream iss(line);
-        std::string lineHeader;
+        std::string lineName;
         // read until colon and ignores it
-        getline(iss, lineHeader, ':');
+        getline(iss, lineName, ':');
 
         std::string station;
         std::string lastStation;
         int cost;
 
+
         // go from station to station
         while (iss >> std::quoted(station) >> cost) {
             if (!lastStation.empty()) {
-                graph_.addEdge(lastStation, station, cost);
+                graph_.addEdge(lastStation, station, cost, lineName);
             }
             lastStation = station;
         }
