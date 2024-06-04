@@ -26,7 +26,7 @@ private:
             -   unordered_map: stores several key and value pairs:
                 key = station name (string)
                 value = edges to other nodes (vector of pairs)
-            -   tuple:
+            -   tuple (has a fixed size and different data types):
                 first element = station name of other station
                 second element = cost between stations
                 third element = line name

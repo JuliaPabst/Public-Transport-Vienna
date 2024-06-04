@@ -16,6 +16,7 @@ std::vector<std::string> Graph::getNodes() const {
 }
 
 std::string Graph::getLine(const std::string& from, const std::string& to) {
+    // checks if specific key (from) exists in unordered_map
     if (adjList.find(from) != adjList.end()) {
         for (const auto& edge : adjList[from]) {
             if (std::get<0>(edge) == to) { // std::get<0>(edge) is the destination station
@@ -25,8 +26,6 @@ std::string Graph::getLine(const std::string& from, const std::string& to) {
     }
     return "";  // Return empty if no direct connection or station doesn't exist
 }
-
-
 
 
 void Graph::addEdge(const std::string& start, const std::string& end, int weight, const std::string& line) {
