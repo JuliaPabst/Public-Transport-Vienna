@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug"/>
+				<Option working_dir="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Program">
-				<Option output="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Program" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug"/>
+				<Option output="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Program" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -32,15 +32,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 Program"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 Program"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Program/fast">
-				<Option output="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Program" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug"/>
+				<Option output="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Program" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,55 +53,55 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 Program/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 Program/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug"/>
+				<Option working_dir="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug"/>
+				<Option working_dir="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/Graph.cpp">
+		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/Graph.cpp">
 			<Option target="Program"/>
 		</Unit>
-		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/Graph.h">
+		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/Graph.h">
 			<Option target="Program"/>
 		</Unit>
-		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/PathFinder.cpp">
+		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/PathFinder.cpp">
 			<Option target="Program"/>
 		</Unit>
-		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/PathFinder.h">
+		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/PathFinder.h">
 			<Option target="Program"/>
 		</Unit>
-		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/Program.cpp">
+		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/Program.cpp">
 			<Option target="Program"/>
 		</Unit>
-		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/Program.h">
+		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/Program.h">
 			<Option target="Program"/>
 		</Unit>
-		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/main.cpp">
+		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/main.cpp">
 			<Option target="Program"/>
 		</Unit>
-		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/CMakeLists.txt">
+		<Unit filename="/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

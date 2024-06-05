@@ -49,8 +49,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program/cmake-build-debug",
-		"source" : "/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Vienna/Program"
+		"build" : "/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program/cmake-build-debug",
+		"source" : "/Users/testadmin/Desktop/currentCodingProjects/Public-Transport-Final/Public-Transport-Vienna/Program"
 	},
 	"version" : 
 	{
